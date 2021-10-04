@@ -21,8 +21,9 @@ import Enrolled from './components/Enrolled/Enrolled';
 function App() {
   return (
     <div>
-      <Menu></Menu>
+
       <Router>
+        <Menu></Menu>
         <Switch>
           {/* default */}
           <Route exact path="/">
@@ -46,8 +47,9 @@ function App() {
             <Error></Error>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
-      <Footer></Footer>
+
     </div>
   );
 }
